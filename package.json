@@ -1,13 +1,11 @@
 {
   "name": "grand_master_cas",
-  "version": "0.2.3",
+  "version": "0.2.3-vml",
   "scripts": {
     "test": "mocha -r should -R spec"
   },
-  "dependencies": {
-    "express": "~3.0.0rc2"
-  },
   "devDependencies": {
+    "express": "^4",
     "mocha": "~1.3.2",
     "should": "~1.1.0",
     "sinon": "~1.4.2"
@@ -15,7 +13,7 @@
   "description": "Simple, easy to use CAS authentication library for Node.JS.",
   "repository": {
     "type": "git",
-    "url": "git@github.com:xaq2892/grand_master_cas.git"
+    "url": "git@github.com:VML/grand_master_cas.git"
   },
   "keywords": [
     "CAS",
