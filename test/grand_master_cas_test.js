@@ -173,7 +173,7 @@ describe( 'Grand Master CAS', function(){
       var next = function(){};
       cas.handler = sinon.spy();
       cas.bouncer(req, res, next)
-      var url = 'https://secure.its.yale.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000';
+      var url = 'https://secure.its.yale.edu:443/cas/login?service=http%3A%2F%2Flocalhost%3A3000';
       assert(cas.handler.calledWith(req, res, next, url));
       cas.handler = oldhandler;
     });
@@ -190,7 +190,7 @@ describe( 'Grand Master CAS', function(){
       var next = function(){};
       res.redirect = sinon.spy();
       cas.bouncer(req, res, next)
-      var url = 'https://secure.its.yale.edu/cas/login?service=http%3A%2F%2Flocalhost%3A3000';
+      var url = 'https://secure.its.yale.edu:443/cas/login?service=http%3A%2F%2Flocalhost%3A3000';
       assert(res.redirect.calledWith(url));
     });
 
